@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 let sessions = {};
 
-app.post('/webhook', async (req, res) => {
+app.post('/web', async (req, res) => {
     const { body } = req;
 
     if (body.object && body.entry && body.entry[0].changes && body.entry[0].changes[0].value.messages) {
@@ -181,7 +181,7 @@ async function sendTextMessage(to, text) {
     }
 }
 
-app.get('/webhook', (req, res) => {
+app.get('/web', (req, res) => {
     const challenge = req.query['hub.challenge'];
             console.log('Webhook verified');
             const mode = req.query['hub.mode']
