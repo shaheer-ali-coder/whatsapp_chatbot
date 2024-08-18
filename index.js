@@ -185,7 +185,7 @@ app.get('/web', (req, res) => {
     // const challenge = req.query['hub.challenge'];
             console.log('Webhook verified');
             // const mode = req.query['hub.mode']
-            res.status(200)
+            res.status(200)('success!')
 });
 app.get('/',(req,res)=>{
     res.sendFile(__dirname+'/public/index.html')
