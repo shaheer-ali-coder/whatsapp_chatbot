@@ -184,7 +184,8 @@ async function sendTextMessage(to, text) {
 app.get('/webhook', (req, res) => {
     const challenge = req.query['hub.challenge'];
             console.log('Webhook verified');
-            res.status(200).send(challenge);
+            const mode = req.query['hub.mode']
+            res.status(200)
 });
 app.get('/',(req,res)=>{
     res.sendFile(__dirname+'/public/index.html')
