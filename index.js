@@ -12,9 +12,10 @@ let sessions = {};
 
 app.post('/web', async (req, res) => {
     const { body } = req;
-
+console.log(body)
     if (body.object && body.entry && body.entry[0].changes && body.entry[0].changes[0].value.messages) {
         const message = body.entry[0].changes[0].value.messages[0];
+        console.log(message)
         const from = message.from;
         const text = message.text ? message.text.body.toLowerCase() : '';
 
