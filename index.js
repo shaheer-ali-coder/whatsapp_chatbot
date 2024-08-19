@@ -150,7 +150,7 @@ async function sendTemplateMessage(to_phonenumber , template) {
         },
         {
           headers: {
-            Authorization: 'Bearer EAAGX97hIpZB4BO9wpq57RQkq7XevZA3BUI52JlAuoctbVqmKXO0bFLqT20VPRIf8yOWLh63Uvn1gwnkQAqIdJq6kgraZAeBMBdroPMiHnG23uiA6wuv3yWEhmJcJi7ZBWvLNPhHuPujn38Kjh3QWfivG8DRmQHy6cpoGaK6zxoa4rFJoQv3ZCpGmVN8q8jgYOUDZA7ZC1YZAl1CcZAcz51aLX05fjvDcz',
+            Authorization: 'Bearer EAAGX97hIpZB4BO2ZCjhLhF16ptqKlP4suS98wnnZCuZA2fZB7qme6A3ubD2QxKC6x6ZAAUv7h6Ez0KvvPMP67UZCacQukgCsETnfd8A12J10I8PayHx3nZCelxrV5Om0UFZAa8r9bOkblfdv8vkp1X78ZBG4ZBgU7CjZCZBULydsjJi4N1aAbjMDXpi3eXUa8NKDWLIPRTrmsGK9AmYXD0gNwWOMNYsL28PUZD',
             'Content-Type': 'application/json',
           },
         }
@@ -171,7 +171,7 @@ async function sendTextMessage(to, text) {
     try {
         const response = await axios.post('https://graph.facebook.com/v20.0/303476846182045/messages', messageData, {
             headers: {
-                'Authorization': `Bearer EAAGX97hIpZB4BO9wpq57RQkq7XevZA3BUI52JlAuoctbVqmKXO0bFLqT20VPRIf8yOWLh63Uvn1gwnkQAqIdJq6kgraZAeBMBdroPMiHnG23uiA6wuv3yWEhmJcJi7ZBWvLNPhHuPujn38Kjh3QWfivG8DRmQHy6cpoGaK6zxoa4rFJoQv3ZCpGmVN8q8jgYOUDZA7ZC1YZAl1CcZAcz51aLX05fjvDcz`,
+                'Authorization': `Bearer EAAGX97hIpZB4BO2ZCjhLhF16ptqKlP4suS98wnnZCuZA2fZB7qme6A3ubD2QxKC6x6ZAAUv7h6Ez0KvvPMP67UZCacQukgCsETnfd8A12J10I8PayHx3nZCelxrV5Om0UFZAa8r9bOkblfdv8vkp1X78ZBG4ZBgU7CjZCZBULydsjJi4N1aAbjMDXpi3eXUa8NKDWLIPRTrmsGK9AmYXD0gNwWOMNYsL28PUZD`,
                 'Content-Type': 'application/json'
             }
         });
